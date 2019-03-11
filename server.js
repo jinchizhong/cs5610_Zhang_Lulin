@@ -20,6 +20,8 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use('/api', require('./server/api'));
+
 const port = process.env.PORT || '3200';
 app.set('port', port);
 
